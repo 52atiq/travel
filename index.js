@@ -75,3 +75,50 @@ $('#gallery').slick({
     $('.toggle').click(function(){
         $('ul').toggleClass('active');
     })  })
+
+
+    // filter destination 
+    $(document).ready(function() {
+        $('list').click(function(){
+            const value = $(this).attr('data-filter');
+            if( value =='all'){
+                $('.itemBox').show('1000');
+            }
+            else{
+                $('itemBox').not('.'+value).hide('1000');
+                $('itemBox').filter('.'+value).show('1000');
+            }
+        })
+    })
+
+
+    // new filter 
+
+    $(document).ready(function(){
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
+        
+        if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+    
+    });
+
+
