@@ -1,192 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>travel</title>
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <!-- slick css  -->
-    <link rel="stylesheet" type="text/css" href="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
-    <!-- jquery cdn  -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
-    <!-- bootstrap  -->
-  
-
-  <!-- cdn slick carousel  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <link rel="stylesheet" href="./main.css"> -->
-    <link rel="stylesheet" href="./filter.css">
-    <link rel="stylesheet" href="./nav.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="bg-red-500">
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-center">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer md:hidden block">
+        <img class="h-10 inline"
+          src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+        tailwind
+      </span>
 
-    <nav>
-        <div class="logo">Brand</div>
-        <div class="menu-btn">
-            <!-- <img class="menu-btn" src="../travel/images/header/bar.svg" alt="" srcset=""> -->
-            <i class="ph-list"></i>
-        </div>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-    </nav>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    <!-- </div> -->
 
-    <!-- <section>
-        <header>
-            <a href="#"> Logo</a>
-            <a class="toggle" href="#">Menu</a>
-            <ul class="active">
-                <li> <a href="#">Home1</a></li>
-                <li> <a href="#">Home2</a></li>
-                <li> <a href="#">Home3</a></li>
-                <li> <a href="#">Home4</a></li>
-                <li> <a href="#">Home5</a></li>
-                <li> <a href="#">Home6</a></li>
-              
-            </ul>
-        </header>
-    </section> -->
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">SERVICE</a>
+      </li>
+      <span class="text-2xl font-[Poppins]  cursor-pointer md:flex hidden">
+        <img class="h-10 inline"
+          src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+        tailwind
+      </span>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+      </li>
 
-<!-- 
-    <div class="container">
-        <h2 class="text-red-500  text-2xl"> our partners</h2>
-        <section class="customer-logos slider ">
-            <div class="slide"> <img class=" w-[600px] h-[200px]" src="./images/partners/addidas.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/Facebook.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/google.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/instagram.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/nike.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/addidas.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/twitter.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/uber.png" alt=""></div>
-            <div class="slide"> <img class="w-[600px] h-[200px]" src="./images/partners/youtube.png" alt=""></div>
+      <!-- <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+        Get started
+      </button> -->
 
-        </section>
-
-    </div> -->
+    </ul>
+  </nav>
 
 
-    <!-- <hr>
-    <div id="gallery">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/addidas.png">
-        <img class="lg:w-[100px] w-[60px images//partners/Facebook.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/google.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/instagram.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/nike.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/twitter.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/uber.png">
-        <img class="lg:w-[100px] w-[60px " src="./images//partners/youtube.png">
-        <img class="lg:w-[400px] w-[60px " src="./images//partners//addidas.png">
-  
-      </div> -->
-
-
-      <section id="destination-filter" class="container mx-auto">
-       <ul class="container">
-        <li class="list active" data-filter="all">All</li>
-        <li class="list" data-filter="europe">Europe</li>
-        <li class="list" data-filter="asia">Asia</li>
-        <li class="list" data-filter="africa">Africa</li>
-        <li class="list" data-filter="north-america">North America</li>
-       </ul>
-
-       <div class="product">
-        <div class="itemBox europe"> <img src="./images/destination-filter/istanbul.png" ></div>
-        <div class="itemBox asia"> <img src="./images/destination-filter/halti.png" ></div>
-        <div class="itemBox africa"> <img src="./images/destination-filter/krimona.png" ></div>
-        <div class="itemBox north-america"> <img src="./images/destination-filter/nordic.png" ></div>
-        <div class="itemBox asia"> <img src="./images/destination-filter/paris.png" ></div>
-        <div class="itemBox africa"> <img src="./images/destination-filter/zurich.png" ></div>
-
-       </div>
-      </section>
-
-
-      <div class="container mx-auto">
-        <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1 class="gallery-title">Галерея</h1>
-        </div>
-
-        <div align="center">
-            <button class="btn btn-default filter-button" data-filter="all">Все</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Дизайн</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Разработка</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Продвижение</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">UX</button>
-        </div>
-        <br/>
-
-
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="index.js"></script>
+  <script>
+    // function Menu(e){
+    //   let list = document.querySelector('ul');
+    //   e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    // }
+  </script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
