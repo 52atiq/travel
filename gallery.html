@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+
+
+    
+</head>
+
+<body class="">
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-center">
+        <div class="flex justify-between items-center ">
+            <span class="text-2xl font-[Poppins] cursor-pointer md:hidden block">
+                <img class="h-10 inline"
+                    src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+                tailwind
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <!-- <ion-icon class="text-red-600" name="menu" onclick="Menu(this)"></ion-icon> -->
+                <img name="menu" src="./images/header/bar.svg" alt="">
+                <img onclick="Menu(this)" src="./images/header/cross.svg" alt="">
+            </span>
+            <!-- </div> -->
+
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="./index.html" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="./gallery.html" class="text-xl hover:text-cyan-500 duration-500">GALLERY</a>
+                </li>
+                <span class="text-2xl font-[Poppins]  cursor-pointer md:flex hidden">
+                    <img class="h-10 inline"
+                        src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+                    tailwind
+                </span>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">ABOUT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+                </li>
+
+
+
+            </ul>
+    </nav>
+
+    <section id="gallery">
+        <div class="mx-12 mt-5 max-w-[1500px]">
+            <div class="md:flex flex-1  justify-between items-center mb-10">
+                <h3>Gallery</h3>
+                <input class=" border-2" type="text" placeholder="search destination">
+            </div>
+            <div class=" abc grid grid-cols-1 md:grid-cols-2 gap-1">
+                <div class=" border rounded-lg p-2 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class=" border rounded-lg p-5 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class=" border rounded-lg p-5 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class=" border rounded-lg p-5 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class=" border rounded-lg p-5 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+                <div class=" border rounded-lg p-5 bg-[]">
+                    <div class="flex items-center gap-2">
+                        <span class="bg-red-500 w-4 h-4 rounded-lg"></span>
+                        <h3>Turkey</h3>
+                    </div>
+                    <h4 class="my-3 font-semibold">Incredible Turkey, Istanbul</h4>
+                    <div class="abc flex gap-3">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/one.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/two.png" alt="">
+                        <img class="lg:w-[196px] w-[65px] lg:h-[196px] h-[65px]" src="./images/gallery/three.png"
+                            alt="">
+                    </div>
+
+                </div>
+               
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+
+   
+</body>
+
+</html>
