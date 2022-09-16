@@ -2,68 +2,165 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-  <link rel="stylesheet" href="./main.css">
-  <script src="https://unpkg.com/phosphor-icons"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body class="">
-  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-center">
-    <div class="flex justify-between items-center ">
-      <span class="text-2xl font-[Poppins] cursor-pointer md:hidden block">
-        <img class="h-10 inline"
-          src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
-        tailwind
-      </span>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-center">
+        <div class="flex justify-between items-center ">
+            <span class="text-2xl font-[Poppins] cursor-pointer md:hidden block">
+                <img class="h-10 inline"
+                    src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+                tailwind
+            </span>
 
-      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-        <!-- <ion-icon class="text-red-600" name="menu" onclick="Menu(this)"></ion-icon> -->
-        <img name="menu" src="./images/header/bar.svg" alt="">
-        <img onclick="Menu(this)" src="./images/header/cross.svg" alt="">
-      </span>
-      <!-- </div> -->
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <!-- <ion-icon class="text-red-600" name="menu" onclick="Menu(this)"></ion-icon> -->
+                <img name="menu" src="./images/header/bar.svg" alt="">
+                <img onclick="Menu(this)" src="./images/header/cross.svg" alt="">
+            </span>
+            <!-- </div> -->
 
-      <ul
-        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-        <li class="mx-4 my-6 md:my-0">
-          <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="./gallery.html" class="text-xl hover:text-cyan-500 duration-500">GALLERY</a>
-        </li>
-        <span class="text-2xl font-[Poppins]  cursor-pointer md:flex hidden">
-          <img class="h-10 inline"
-            src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
-          tailwind
-        </span>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="single.html" class="text-xl hover:text-cyan-500 duration-500">SINGLE</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-          <a href="slick.html" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
-        </li>
-
-
-
-      </ul>
-  </nav>
-
-  <div class="w-full h-[500px] flex justify-center items-center" style="background-image: url('./images/single/single.png')">
-    <span class="text-3xl text-white">Incredible Turkey</span>
-    <h3 ></h3>
-
-</div>
+            <ul
+                class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="./gallery.html" class="text-xl hover:text-cyan-500 duration-500">GALLERY</a>
+                </li>
+                <span class="text-2xl font-[Poppins]  cursor-pointer md:flex hidden">
+                    <img class="h-10 inline"
+                        src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg">
+                    tailwind
+                </span>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="single.html" class="text-xl hover:text-cyan-500 duration-500">SINGLE</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-cyan-500 duration-500">CONTACT</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="slick.html" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+                </li>
 
 
 
-  <script src="./index.js"></script>
+            </ul>
+    </nav>
+
+    <div class="w-full h-[500px] flex justify-center items-center"
+        style="background-image: url('./images/single/single.png')">
+        <span class="text-3xl text-white">Incredible Turkey</span>
+        <h3></h3>
+
+    </div>
+
+    <section id="turkey">
+        <div class="mx-28 mb-56">
+            <div class="grid grid-cols-12 gap-7">
+                <div class="grid col-span-8">
+                     <div class="one ">
+                        <div class="mt-10 mb-10">
+                          
+                                <h3 class="text-2xl font-bold mb-2">Incredible turkey  | 6day-5night</h3>
+                              <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-3 h-3 bg-red-700 rounded-lg"></span>
+                                    <p>India</p>
+                                   </div>
+                                   <div><p class="text-red-600 font-bold">$56780000</p></div>
+                              </div>
+                        </div>
+                        <hr>
+                        <div class=" grid grid-cols-12 gap-5">
+
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+                            <div class=" grid col-span-3">
+                                <div class="flex gap-3">
+                                   <div> <img src="./images/single/Icons.png" alt=""></div>
+                                    <div><p>Duration</p></div>
+                                </div>
+                                <div><p class=" ml-10">Duration 5day</p></div>
+                            </div>
+
+                        </div>
+
+                     </div>
+
+                </div>
+                <div class="grid col-span-4 mt-20">
+
+                    <form action="">
+                        <input type="text" placeholder="type name">
+                        <h3 class="text-5xl text-red-600">ATIQ</h3>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
