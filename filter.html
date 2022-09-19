@@ -55,16 +55,65 @@
       </ul>
   </nav>
 
-  <h1 class="text-5xl text-red-700 text-center">Home Page</h1>
-  <p class="mx-20 text-3xl text-gray-900"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione corrupti,
-    eveniet, id ea praesentium magni
-    dolorum odit cupiditate neque obcaecati autem, dolor consequatur? Eum atque repudiandae officiis quidem magni
-    possimus.</p>
-  
+  <!-- <h1 class="text-5xl text-red-700 text-center">Filter Page</h1> -->
+ 
+  <section>
+    <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="europe">Europe</li>
+        <li class="list" data-filter="asia">Asia</li>
+        <li class="list" data-filter="africa">Africa</li>
+        <li class="list" data-filter="america">America</li>
+       
+    </ul>
+    <div class="product">
+        <div class="itemBox" data-item="europe">
+            <img src="./images/destination-filter/halti.png" alt="">
+        </div>
+        <div class="itemBox" data-item="asia">
+            <img src="./images/destination-filter/istanbul.png" alt="">
+        </div>
+        <div class="itemBox" data-item="asia">
+            <img src="./images/destination-filter/krimona.png" alt="">
+        </div>
+        <div class="itemBox" data-item="africa">
+            <img src="./images/destination-filter/nordic.png" alt="">
+        </div>
+        <div class="itemBox" data-item="america">
+            <img src="./images/destination-filter/paris.png" alt="">
+        </div>
+    </div>
+  </section>
 
 
 
-  <script src="./index.js"></script>
+  <!-- <script src="./index.js"></script> -->
+
+  <script>
+    let list = document.querySelectorAll('.list');
+    let itemBox = document.querySelectorAll('.itemBox');
+
+    for(let i =0; i<list.length; i++){
+        list[i].addEventListener('click', function(){
+            for(let j =0; j<list.length; j++){
+                list[j].classList.remove('active');
+            }
+            this.classList.add('active');
+
+            let dataFilter = this.getAttribute('data-filter');
+            for(let k =0; k<itemBox.length; k++){
+                itemBox[k].classList.remove('active');
+                itemBox[k].classList.add('hide');
+
+                if(itemBox[k].getAttribute('data-item') == dataFilter ||
+                 dataFilter == "all"){
+                    itemBox[k].classList.add('hide');
+                    itemBox[k].classList.add('active');
+                 }
+            }
+        })
+    }
+  </script>
 </body>
 
 </html>
